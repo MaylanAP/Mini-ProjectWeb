@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a9fde55ed12760b7f3608f01ded6fdd76ed7c692a1abd33274b53c9b356e6352.html">Transaksi</a></span>
+                > <span class="truncate-60"><a
+                    href="9a7b46222717f9df5bc1afd4af43ed53b81cbfd011790054c2d2a8ee2118dc5c.html"> </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-10-2022 23:15</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Transaksi </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want see my transaction<br />
+So I can see my transaction
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I open the website<br>And I click sign in button<br>And I input "&lt;email&gt;" email and "&lt;pass&gt;" password valid<br>And click login button<br>And I can login "&lt;result&gt;"<br>And I click beli button product 1<br>And I click beli button product 2<br>And I click cart icon<br>And see all order<br>When I click profile icon<br>And I click transaksi button<br>Then see transaction</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" Example 1: {email=maylananggi@gmail.com, pass=maylanqe22, result=can login}" width="1920"/>
+                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" Given I open the website" width="1920"/>
+                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" And I click sign in button" width="1920"/>
+                <img src="c5ec325eb43bc3a65013e3d36d12e892f57ffe86089062fdc26aa29e9e4df913.png" title=" And I click sign in button (completed)" width="1920"/>
+                <img src="c5ec325eb43bc3a65013e3d36d12e892f57ffe86089062fdc26aa29e9e4df913.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid" width="1920"/>
+                <img src="53de6cff5ceb8d9c0968e4d2007019a86c2ea9d35db3e938552a4ce6ae646993.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid (completed)" width="1920"/>
+                <img src="53de6cff5ceb8d9c0968e4d2007019a86c2ea9d35db3e938552a4ce6ae646993.png" title=" And click login button" width="1920"/>
+                <img src="e5345fbf7c8e2413256b72b03891d377f18ea86e433c1b7d9774f55bdf114bbf.png" title=" And click login button (completed)" width="1920"/>
+                <img src="e5345fbf7c8e2413256b72b03891d377f18ea86e433c1b7d9774f55bdf114bbf.png" title=" And I can login &quot;can login&quot;" width="1920"/>
+                <img src="4b1c5869aba4d65b50772cb10a645d7a4283390b76e5092a3504e3c651554b4e.png" title=" And I can login &quot;can login&quot; (completed)" width="1920"/>
+                <img src="4b1c5869aba4d65b50772cb10a645d7a4283390b76e5092a3504e3c651554b4e.png" title=" And I click beli button product 1" width="1920"/>
+                <img src="804c3d75cd95b72b37932464af3efb264bfbc2d385fd243b0ab8f81386ccf9d5.png" title=" And I click beli button product 1 (completed)" width="1920"/>
+                <img src="804c3d75cd95b72b37932464af3efb264bfbc2d385fd243b0ab8f81386ccf9d5.png" title=" And I click beli button product 2" width="1920"/>
+                <img src="f3d7034ba29051f35120c3c2f3b1080ad48422ed1ef006cec86b2e55e7fbd21b.png" title=" And I click beli button product 2 (completed)" width="1920"/>
+                <img src="f3d7034ba29051f35120c3c2f3b1080ad48422ed1ef006cec86b2e55e7fbd21b.png" title=" And I click cart icon" width="1920"/>
+                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" And I click cart icon (completed)" width="1920"/>
+                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" And see all order" width="1920"/>
+                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" And see all order (completed)" width="1920"/>
+                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" When I click profile icon" width="1920"/>
+                <img src="c8ac1170b0a0329d0881cf97261cffcd94a16f6db60c4d4f6fddc8fdd295a730.png" title=" When I click profile icon (completed)" width="1920"/>
+                <img src="c8ac1170b0a0329d0881cf97261cffcd94a16f6db60c4d4f6fddc8fdd295a730.png" title=" And I click transaksi button" width="1920"/>
+                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" And I click transaksi button (completed)" width="1920"/>
+                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" Then see transaction" width="1920"/>
+                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" Then see transaction (completed)" width="1920"/>
+                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" Example 1: {email=maylananggi@gmail.com, pass=maylanqe22, result=can login} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>

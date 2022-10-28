@@ -1,0 +1,168 @@
+# Created at 2022-10-28T22:45:31.345
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (26364@MylnAP):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@11.0.16/java.util.zip.ZipFile$Source.getEntryPos(ZipFile.java:1639)
+        at java.base@11.0.16/java.util.zip.ZipFile.getEntry(ZipFile.java:350)
+        at java.base@11.0.16/java.util.zip.ZipFile$1.getEntry(ZipFile.java:1130)
+        at java.base@11.0.16/java.util.jar.JarFile.getEntry0(JarFile.java:586)
+        at java.base@11.0.16/java.util.jar.JarFile.getEntry(JarFile.java:516)
+        at java.base@11.0.16/java.util.jar.JarFile.getJarEntry(JarFile.java:478)
+        at java.base@11.0.16/jdk.internal.loader.URLClassPath$JarLoader.getResource(URLClassPath.java:945)
+        at java.base@11.0.16/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:315)
+        at java.base@11.0.16/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:695)
+        at java.base@11.0.16/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+        at java.base@11.0.16/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+        at java.base@11.0.16/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+        at java.base@11.0.16/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+        at app//org.apache.hc.client5.http.impl.io.ManagedHttpClientConnectionFactory.<init>(ManagedHttpClientConnectionFactory.java:82)
+        at app//org.apache.hc.client5.http.impl.io.ManagedHttpClientConnectionFactory.<init>(ManagedHttpClientConnectionFactory.java:95)
+        at app//org.apache.hc.client5.http.impl.io.ManagedHttpClientConnectionFactory.<init>(ManagedHttpClientConnectionFactory.java:102)
+        at app//org.apache.hc.client5.http.impl.io.ManagedHttpClientConnectionFactory.<init>(ManagedHttpClientConnectionFactory.java:106)
+        at app//org.apache.hc.client5.http.impl.io.ManagedHttpClientConnectionFactory.<clinit>(ManagedHttpClientConnectionFactory.java:61)
+        at app//org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.<init>(PoolingHttpClientConnectionManager.java:207)
+        at app//org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.<init>(PoolingHttpClientConnectionManager.java:172)
+        at app//org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.<init>(PoolingHttpClientConnectionManager.java:161)
+        at app//org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.<init>(PoolingHttpClientConnectionManager.java:144)
+        at app//org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.<init>(PoolingHttpClientConnectionManager.java:136)
+        at app//org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.<init>(PoolingHttpClientConnectionManager.java:130)
+        at app//io.github.bonigarcia.wdm.online.HttpClient.<init>(HttpClient.java:118)
+        at app//io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:379)
+        at app//net.serenitybdd.core.webdriver.driverproviders.webdrivermanager.WebDriverManagerSetup.forChrome(WebDriverManagerSetup.java:56)
+        at app//net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:46)
+        at app//net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:157)
+        at app//net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:136)
+        at app//net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:143)
+        at app//net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:134)
+        at app//net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:104)
+        at app//net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:174)
+        at app//net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:983)
+        at app//net.serenitybdd.core.pages.PageObject.openAt(PageObject.java:924)
+        at app/MiniProjWeb@1.0-SNAPSHOT/starter.pages.RegisterPage.openWeb(RegisterPage.java:32)
+        at app/MiniProjWeb@1.0-SNAPSHOT/starter.pages.RegisterPage$ByteBuddy$LYJoR536.openWeb$accessor$7bx7fDOc(Unknown Source)
+        at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base@11.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@11.0.16/java.lang.reflect.Method.invoke(Method.java:566)
+        at app//net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+        at app//net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+        at app//net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:406)
+        at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:191)
+        at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
+        at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+        at app/MiniProjWeb@1.0-SNAPSHOT/starter.pages.RegisterPage$ByteBuddy$LYJoR536.openWeb(Unknown Source)
+        at app/MiniProjWeb@1.0-SNAPSHOT/starter.steps.RegisterStep.iOpenTheWebsite(RegisterStep.java:16)
+        at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base@11.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@11.0.16/java.lang.reflect.Method.invoke(Method.java:566)
+        at app//io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+        at app//io.cucumber.java.Invoker.invoke(Invoker.java:24)
+        at app//io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+        at app//io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+        at app//io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+        at app//io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+        at app//io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+        at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+        at app//io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+        at app//io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+        at app//io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+        at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+        at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+        at app//io.cucumber.junit.PickleRunners$NoStepDescriptions$$Lambda$542/0x00000001002e9840.accept(Unknown Source)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext$$Lambda$543/0x00000001002e9c40.run(Unknown Source)
+        at app//io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+        at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+        at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+        at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+        at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+        at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+        at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+        at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+        at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+        at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+        at app//io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+        at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)
+        at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)
+        at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+        at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+        at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+        at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+        at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+        at app//io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:287)
+        at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+        at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+        at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+        at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@11.0.16/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@11.0.16/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+        at java.base@11.0.16/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@11.0.16/java.lang.Object.wait(Native Method)
+        at java.base@11.0.16/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@11.0.16/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@11.0.16/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.16/java.lang.Object.wait(Native Method)
+        at java.base@11.0.16/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@11.0.16/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+        at java.base@11.0.16/java.lang.Thread.run(Thread.java:834)
+        at java.base@11.0.16/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@11.0.16/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@11.0.16/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:649)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:340)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:423)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:435)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
+        at java.base@11.0.16/java.lang.Thread.run(Thread.java:834)
+
+"ForkJoinPool.commonPool-worker-3" 
+   java.lang.Thread.State: WAITING
+        at java.base@11.0.16/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@11.0.16/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+        at java.base@11.0.16/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
+        at java.base@11.0.16/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+"ForkJoinPool.commonPool-worker-5" 
+   java.lang.Thread.State: WAITING
+        at java.base@11.0.16/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@11.0.16/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+        at java.base@11.0.16/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
+        at java.base@11.0.16/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+"ForkJoinPool.commonPool-worker-7" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.16/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@11.0.16/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:275)
+        at java.base@11.0.16/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1619)
+        at java.base@11.0.16/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+
+
