@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-10-2022 23:15</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-10-2022 20:08</span>
     <br style="clear:left"/>
 </div>
 
@@ -191,9 +191,9 @@ So I can see my transaction
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="failing-color">
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,33 +214,57 @@ So I can see my transaction
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabledBuild info: version: '4.1.2', revision: '9a5a329c5a'System info: host: 'MYLNAP', ip: '192.168.110.45', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.BeliPage.buttonBeli1(BeliPage.java:34)<br />starter.steps.BeliStep.iClickBeliButtonProduct1(BeliStep.java:15)<br />✽.I click beli button product 1(file:///D:/TIC/Kampus%20Merdeka/MSIB/Studi%20Independen/Alterra/MiniProject/MiniProjWeb/src/test/resources/features/login/transaction.feature:13)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource15034647531931543793.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" Example 1: {email=maylananggi@gmail.com, pass=maylanqe22, result=can login}" width="1920"/>
-                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" Given I open the website" width="1920"/>
-                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" And I click sign in button" width="1920"/>
-                <img src="c5ec325eb43bc3a65013e3d36d12e892f57ffe86089062fdc26aa29e9e4df913.png" title=" And I click sign in button (completed)" width="1920"/>
-                <img src="c5ec325eb43bc3a65013e3d36d12e892f57ffe86089062fdc26aa29e9e4df913.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid" width="1920"/>
-                <img src="53de6cff5ceb8d9c0968e4d2007019a86c2ea9d35db3e938552a4ce6ae646993.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid (completed)" width="1920"/>
-                <img src="53de6cff5ceb8d9c0968e4d2007019a86c2ea9d35db3e938552a4ce6ae646993.png" title=" And click login button" width="1920"/>
-                <img src="e5345fbf7c8e2413256b72b03891d377f18ea86e433c1b7d9774f55bdf114bbf.png" title=" And click login button (completed)" width="1920"/>
-                <img src="e5345fbf7c8e2413256b72b03891d377f18ea86e433c1b7d9774f55bdf114bbf.png" title=" And I can login &quot;can login&quot;" width="1920"/>
-                <img src="4b1c5869aba4d65b50772cb10a645d7a4283390b76e5092a3504e3c651554b4e.png" title=" And I can login &quot;can login&quot; (completed)" width="1920"/>
-                <img src="4b1c5869aba4d65b50772cb10a645d7a4283390b76e5092a3504e3c651554b4e.png" title=" And I click beli button product 1" width="1920"/>
-                <img src="804c3d75cd95b72b37932464af3efb264bfbc2d385fd243b0ab8f81386ccf9d5.png" title=" And I click beli button product 1 (completed)" width="1920"/>
-                <img src="804c3d75cd95b72b37932464af3efb264bfbc2d385fd243b0ab8f81386ccf9d5.png" title=" And I click beli button product 2" width="1920"/>
-                <img src="f3d7034ba29051f35120c3c2f3b1080ad48422ed1ef006cec86b2e55e7fbd21b.png" title=" And I click beli button product 2 (completed)" width="1920"/>
-                <img src="f3d7034ba29051f35120c3c2f3b1080ad48422ed1ef006cec86b2e55e7fbd21b.png" title=" And I click cart icon" width="1920"/>
-                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" And I click cart icon (completed)" width="1920"/>
-                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" And see all order" width="1920"/>
-                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" And see all order (completed)" width="1920"/>
-                <img src="b412e6c228a2222a57b49f40ad1ebc3acdd3fe740ade4479ff13082586adbd27.png" title=" When I click profile icon" width="1920"/>
-                <img src="c8ac1170b0a0329d0881cf97261cffcd94a16f6db60c4d4f6fddc8fdd295a730.png" title=" When I click profile icon (completed)" width="1920"/>
-                <img src="c8ac1170b0a0329d0881cf97261cffcd94a16f6db60c4d4f6fddc8fdd295a730.png" title=" And I click transaksi button" width="1920"/>
-                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" And I click transaksi button (completed)" width="1920"/>
-                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" Then see transaction" width="1920"/>
-                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" Then see transaction (completed)" width="1920"/>
-                <img src="f89d2140ab579f091e9fb64bf187ed2155c18a174fdc0a5ace7e6e8e73a089ed.png" title=" Example 1: {email=maylananggi@gmail.com, pass=maylanqe22, result=can login} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="5297bd387dc3249e00c2d6656fb13e2699af90824ba878fd382afd24108abb14.png" title=" Example 1: {email=maylananggi@gmail.com, pass=maylanqe22, result=can login}" width="1554"/>
+                <img src="5297bd387dc3249e00c2d6656fb13e2699af90824ba878fd382afd24108abb14.png" title=" Given I open the website" width="1554"/>
+                <img src="5297bd387dc3249e00c2d6656fb13e2699af90824ba878fd382afd24108abb14.png" title=" And I click sign in button" width="1554"/>
+                <img src="a12fafd32a12e7281527aafc77fcde28e0b3deed7f703f1180072cc6140122b0.png" title=" And I click sign in button (completed)" width="1554"/>
+                <img src="a12fafd32a12e7281527aafc77fcde28e0b3deed7f703f1180072cc6140122b0.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid" width="1554"/>
+                <img src="7709ae0ae0b38becfaa6bc946fa13c39612d2fd41070d5d89bda563a3a8c8cca.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid (completed)" width="1554"/>
+                <img src="7709ae0ae0b38becfaa6bc946fa13c39612d2fd41070d5d89bda563a3a8c8cca.png" title=" And click login button" width="1554"/>
+                <img src="4d6d5d5dd20708f0ca42bca24d1312e3f2dcdaf0ab58b0aa7bd922cd4c1ce76b.png" title=" And click login button (completed)" width="1554"/>
+                <img src="4d6d5d5dd20708f0ca42bca24d1312e3f2dcdaf0ab58b0aa7bd922cd4c1ce76b.png" title=" And I can login &quot;can login&quot;" width="1554"/>
+                <img src="d8b499ed686e55f0b78d51e910f49a96a4b37ac4fe3410ebf36be4d591ebdf61.png" title=" And I can login &quot;can login&quot; (completed)" width="1554"/>
+                <img src="d8b499ed686e55f0b78d51e910f49a96a4b37ac4fe3410ebf36be4d591ebdf61.png" title=" And I click beli button product 1" width="1554"/>
+                <img src="2b8ebe1309cf382c755d520791eecc42d8a0c0223a13663b6692649004046c5d.png" title=" Button beli1" width="1554"/>
+                <img src="2b8ebe1309cf382c755d520791eecc42d8a0c0223a13663b6692649004046c5d.png" title=" Button beli1 (completed): <span class='failing-color'>FAILURE</span>" width="1554"/>
             </div>
         </div>
 

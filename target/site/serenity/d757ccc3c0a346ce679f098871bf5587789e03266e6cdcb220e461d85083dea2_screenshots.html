@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-10-2022 22:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-10-2022 19:33</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ So I can get detail product
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">I click button detail after login
+                                <span class="error-color">I click button detail after login
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -220,23 +220,49 @@ So I can get detail product
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.RegistrationPage.clckSignIn(RegistrationPage.java:35)<br />starter.steps.RegistrationStep.iClickSignInButton(RegistrationStep.java:21)<br />✽.I click sign in button(file:///D:/TIC/Kampus%20Merdeka/MSIB/Studi%20Independen/Alterra/MiniProject/MiniProjWeb/src/test/resources/features/login/Detail.feature:9)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource12254302996507192922.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="4773f7157982f2d6b8b5d90f992f1dcc85b5b3c75c231c74dd7ae651123accd2.png" title=" 1: I click button detail after login ({email=maylananggi@gmail.com, pass=maylanqe22, result=can login})" width="1554"/>
-                <img src="4773f7157982f2d6b8b5d90f992f1dcc85b5b3c75c231c74dd7ae651123accd2.png" title=" Given I open the website" width="1554"/>
-                <img src="4773f7157982f2d6b8b5d90f992f1dcc85b5b3c75c231c74dd7ae651123accd2.png" title=" And I click sign in button" width="1554"/>
-                <img src="b322e5062ae612f1706adb26e9e5d7b8a7517e447b7343a42e0fa8d077935ab2.png" title=" And I click sign in button (completed)" width="1554"/>
-                <img src="b322e5062ae612f1706adb26e9e5d7b8a7517e447b7343a42e0fa8d077935ab2.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid" width="1554"/>
-                <img src="ce231fb6cd01b771cf7e576f3e9e14bff984dd49955a57dacd6d38bb289bbe87.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid (completed)" width="1554"/>
-                <img src="ce231fb6cd01b771cf7e576f3e9e14bff984dd49955a57dacd6d38bb289bbe87.png" title=" And click login button" width="1554"/>
-                <img src="f749af3ba5ff740c8fe8c8155c401e8cc6113018383e5251795e026484bb6595.png" title=" And click login button (completed)" width="1554"/>
-                <img src="f749af3ba5ff740c8fe8c8155c401e8cc6113018383e5251795e026484bb6595.png" title=" And I can login &quot;can login&quot;" width="1554"/>
-                <img src="d8b499ed686e55f0b78d51e910f49a96a4b37ac4fe3410ebf36be4d591ebdf61.png" title=" And I can login &quot;can login&quot; (completed)" width="1554"/>
-                <img src="d8b499ed686e55f0b78d51e910f49a96a4b37ac4fe3410ebf36be4d591ebdf61.png" title=" When I click detail button" width="1554"/>
-                <img src="0cf141643c023fe10ec0b46e22e4fb96241b68d52a5d7ff4e7825ac6691dcb37.png" title=" When I click detail button (completed)" width="1554"/>
-                <img src="0cf141643c023fe10ec0b46e22e4fb96241b68d52a5d7ff4e7825ac6691dcb37.png" title=" Then I go to detail product" width="1554"/>
-                <img src="b890b1bf2af758daf677d3fd49041969fd25b151b3bf90297ab3a188c862da04.png" title=" Then I go to detail product (completed)" width="1554"/>
-                <img src="b890b1bf2af758daf677d3fd49041969fd25b151b3bf90297ab3a188c862da04.png" title=" 1: I click button detail after login ({email=maylananggi@gmail.com, pass=maylanqe22, result=can login}) (completed): <span class='success-color'>SUCCESS</span>" width="1554"/>
+                <img src="741583b400c154d452a86a511225eb3c6ee9b9d380715f5ccd465ca65c2c414b.png" title=" 1: I click button detail after login ({email=maylananggi@gmail.com, pass=maylanqe22, result=can login})" width="1554"/>
+                <img src="741583b400c154d452a86a511225eb3c6ee9b9d380715f5ccd465ca65c2c414b.png" title=" Given I open the website" width="1554"/>
+                <img src="741583b400c154d452a86a511225eb3c6ee9b9d380715f5ccd465ca65c2c414b.png" title=" And I click sign in button" width="1554"/>
+                <img src="8f0792003b527ad7d87520fe4bc21e86c1e4ecd8e7eb470279ec3f7f7a69a2f0.png" title=" Clck sign in" width="1554"/>
+                <img src="8f0792003b527ad7d87520fe4bc21e86c1e4ecd8e7eb470279ec3f7f7a69a2f0.png" title=" Clck sign in (completed): <span class='error-color'>ERROR</span>" width="1554"/>
             </div>
         </div>
 

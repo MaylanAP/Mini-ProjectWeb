@@ -198,7 +198,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-10-2022 23:16:26</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-10-2022 20:14:17</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -213,7 +213,8 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    0 test cases 
+                                    8 test cases 
+                                        (including 24 rows of test data)
                                     
 
                                 </div>
@@ -240,6 +241,9 @@
                                                     <div class="col-lg-4 col-md-6 col-sm-9">
                                                         <!-- PIE CHART -->
                                                         <h4><i class="bi bi-pie-chart"></i> Overview</h4>
+                                                            <div class="chart-container">
+                                                                <canvas id="resultChart" height="200px"></canvas>
+                                                            </div>
                                                     </div>
                                                     <div class="col-lg-4 col-md-6 col-sm-9">
                                                         <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -260,6 +264,14 @@
                                             </div>
                                             <div class="container-fluid">
                                                 <div class="row">
+                                                        <div class="col-lg-8 col-md-8 col-sm-9">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
                                                     <div class="col-lg-4 col-md-4 col-sm-6">
                                                         <div>
                                                             <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
@@ -270,61 +282,61 @@
                                                                         <td>
                                                                             <i class="bi bi-card-checklist"></i> Number of Test Cases
                                                                         </td>
-                                                                        <td>0</td>
+                                                                        <td>8</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-caret-right"></i> Number of Scenarios
                                                                         </td>
-                                                                        <td>0</td>
+                                                                        <td>25</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-flag-fill"></i> Tests
                                                                             Started
                                                                         </td>
-                                                                        <td></td>
+                                                                        <td>Oct 31, 2022 19:15:31</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-stop-circle"></i> Tests
                                                                             Finished
                                                                         </td>
-                                                                        <td></td>
+                                                                        <td>Oct 31, 2022 20:08:03</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-stopwatch"></i> Total
                                                                             Duration
                                                                         </td>
-                                                                        <td>0ms</td>
+                                                                        <td> 52m 31s</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-trophy"></i> Fastest Test
                                                                         </td>
-                                                                        <td>0ms</td>
+                                                                        <td>28s</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-skip-start"></i> Slowest
                                                                             Test
                                                                         </td>
-                                                                        <td>0ms</td>
+                                                                        <td> 15m 43s</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-stopwatch"></i> Average
                                                                             Execution Time
                                                                         </td>
-                                                                        <td>0ms</td>
+                                                                        <td> 6m 33s</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
                                                                             <i class="bi bi-stopwatch-fill"></i> Total
                                                                             Execution Time
                                                                         </td>
-                                                                        <td>0ms</td>
+                                                                        <td> 52m 31s</td>
                                                                     </tr>
                                                                     </tbody>
                                                                 </table>
@@ -334,9 +346,236 @@
                                                 </div>
                                             </div>
                                             <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-sm-11">
+                                                            <h3>Functional Coverage Details</h3>
 
+
+                                                                    <h4>Features</h4>
+
+                                                                    <table class="table feature-coverage-table" id="Feature">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Feature</th>
+                                                                            <th style="width:1em;">Test&nbsp;Cases</th>
+                                                                            <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">%&nbsp;Pass</th>
+                                                                            <th style="width:1em;">Result</th>
+                                                                            <th>Coverage</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                        <a href="5e83a9696a22d60ca842fcad3c4f6843283c7558697e39b2021c762c9975068c.html" > Button Beli</a>
+                                                                                </td>
+                                                                                <td>3</td>
+                                                                                <td>3</td>
+                                                                                <td>67%</td>
+                                                                                <td>
+                                                                                        <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="progress">
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 66.666667%; background-color: #b0cf73"
+                                                                                                 aria-valuenow="2"
+                                                                                                 title="67% success"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 33.333333%; background-color: #fe6c2d"
+                                                                                                 aria-valuenow="1"
+                                                                                                 title="33% error"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                        <a href="83f6679d20705c4d2fe60d958c7694f289478bda7a9f3a9ac9cbf7ba86966dfb.html" > Login</a>
+                                                                                </td>
+                                                                                <td>1</td>
+                                                                                <td>9</td>
+                                                                                <td>100%</td>
+                                                                                <td>
+                                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="progress">
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 100%; background-color: #b0cf73"
+                                                                                                 aria-valuenow="9"
+                                                                                                 title="100% success"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                        <a href="54ddd7ed84893f726df8a90b6ddcd4da4a01154154ae9285a7c052eda5c78851.html" > Logout</a>
+                                                                                </td>
+                                                                                <td>1</td>
+                                                                                <td>1</td>
+                                                                                <td>100%</td>
+                                                                                <td>
+                                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="progress">
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 100%; background-color: #b0cf73"
+                                                                                                 aria-valuenow="1"
+                                                                                                 title="100% success"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                        <a href="31376c3f728d8dee8e354956ace6e0c5447b15ec995a199156a6b2b6dfe291bb.html" > Page Home</a>
+                                                                                </td>
+                                                                                <td>2</td>
+                                                                                <td>2</td>
+                                                                                <td>50%</td>
+                                                                                <td>
+                                                                                        <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="progress">
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 50%; background-color: #b0cf73"
+                                                                                                 aria-valuenow="1"
+                                                                                                 title="50% success"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 50%; background-color: #fe6c2d"
+                                                                                                 aria-valuenow="1"
+                                                                                                 title="50% error"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                        <a href="3b8d02d7be757d6f8a663052671ec6811f370b5c9ff3d05923ed0e0f2d5ee035.html" > Register</a>
+                                                                                </td>
+                                                                                <td>1</td>
+                                                                                <td>10</td>
+                                                                                <td>100%</td>
+                                                                                <td>
+                                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="progress">
+                                                                                            <div class="progress-bar"
+                                                                                                 role="progressbar"
+                                                                                                 style="width: 100%; background-color: #b0cf73"
+                                                                                                 aria-valuenow="10"
+                                                                                                 title="100% success"
+                                                                                                 aria-valuemin="0"
+                                                                                                 aria-valuemax="100">
+                                                                                            </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <h3>Test Failure Overview</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <h4>Most Frequent Failures</h4>
+                                                            <table class="table" style="width:40vw;">
+                                                                <tbody>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <h4>Most Unstable Features</h4>
+                                                            <table class="table" style="width:40vw;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="31376c3f728d8dee8e354956ace6e0c5447b15ec995a199156a6b2b6dfe291bb.html">Page Home</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">50%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="5e83a9696a22d60ca842fcad3c4f6843283c7558697e39b2021c762c9975068c.html">Button Beli</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">33%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                             </div>
                                             <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="b84c441d098073186cdfc3e3c721140d15594fb6ca47fe822cafc5fe4f10b013.html">
+                                    <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Beli&nbsp;&nbsp;&nbsp;3
+                                    </span>
+                                    </a>
+                                    <a href="933096f3e5ad2c8d15c0a0959a685cf51be0744eedb4c7c61e4b74a1ac9a3c80.html">
+                                    <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Detail&nbsp;&nbsp;&nbsp;2
+                                    </span>
+                                    </a>
+                                    <a href="b5a51fc64ff8ca83de06a356b9bd0e5c8cbde54af2b1e8e384a9228fd9a93a6f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Register&nbsp;&nbsp;&nbsp;10
+                                    </span>
+                                    </a>
+                                    <a href="c721517496ffad35fe9a5d73f07a9bd15eb22da3cff8328e1d9f7ec70655c6b0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Login&nbsp;&nbsp;&nbsp;9
+                                    </span>
+                                    </a>
+                                    <a href="e61ff0167d1662a4e5bc6b5b4a90e56e61872ec330f316508834a25df8ebaaed.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Logout&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                             </div>
                                         </div>
                                         <div id="tests" class="tab-pane fade">
@@ -345,7 +584,132 @@
                                                     <div class="col-sm-12">
                                                         <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                            No automated tests were executed
+                                                            <table class="manual-scenario-result-table table"
+                                                                   id="scenario-results">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>feature</th>
+                                                                    <th class="test-name-column">Scenario</th>
+                                                                    <th>Steps</th>
+                                                                    <th>Started</th>
+                                                                    <th>Duration</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="scenario-result ERROR">
+                                                                        <td>
+                                                                                <a href="5e83a9696a22d60ca842fcad3c4f6843283c7558697e39b2021c762c9975068c.html">Button Beli</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="8eaf9a5f17fbdeeea7246b38695ec28d800daa63e0ffd283caa98d5c743d9936.html">Beli one product</a>
+                                                                                (1 example)
+                                                                        </td>
+                                                                        <td>7</td>
+                                                                        <td>19:15:31</td>
+                                                                        <td>15m 45s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="5e83a9696a22d60ca842fcad3c4f6843283c7558697e39b2021c762c9975068c.html">Button Beli</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="d13be06ffdb56f46a72ec77b4c67cde00d98b1ced6a7d2a7499991f99b5494e2.html">see order</a>
+                                                                                (1 example)
+                                                                        </td>
+                                                                        <td>9</td>
+                                                                        <td>19:31:16</td>
+                                                                        <td>1m 11s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="5e83a9696a22d60ca842fcad3c4f6843283c7558697e39b2021c762c9975068c.html">Button Beli</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="8f1cd4fee484556beb602e7088a87b44caa8cee3f911690e2137066da2abb941.html">Bayar product</a>
+                                                                                (1 example)
+                                                                        </td>
+                                                                        <td>11</td>
+                                                                        <td>19:32:27</td>
+                                                                        <td>1m 16s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result ERROR">
+                                                                        <td>
+                                                                                <a href="31376c3f728d8dee8e354956ace6e0c5447b15ec995a199156a6b2b6dfe291bb.html">Page Home</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="d757ccc3c0a346ce679f098871bf5587789e03266e6cdcb220e461d85083dea2.html">I click button detail after login</a>
+                                                                                (1 example)
+                                                                        </td>
+                                                                        <td>7</td>
+                                                                        <td>19:33:43</td>
+                                                                        <td>1m 19s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span style="display:none">ERROR</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="31376c3f728d8dee8e354956ace6e0c5447b15ec995a199156a6b2b6dfe291bb.html">Page Home</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="79281a27e49e3d8ee29d3f6d650f82be96a04408e5504341655355fcf2924b2b.html">give 4 star</a>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>19:35:02</td>
+                                                                        <td>47s 762ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="3b8d02d7be757d6f8a663052671ec6811f370b5c9ff3d05923ed0e0f2d5ee035.html">Register</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="6467056c171a83325128c151b09ca25966eab0d281fa50cbdc23a6052fdc47f6.html">New Register</a>
+                                                                                (10 examples)
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td>19:35:50</td>
+                                                                        <td>17m 51s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="83f6679d20705c4d2fe60d958c7694f289478bda7a9f3a9ac9cbf7ba86966dfb.html">Login</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="d575fcba536a6486f4a010187ae67666f4ebb8259b77c456493f732cfe82e222.html">login with email and password</a>
+                                                                                (9 examples)
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>19:53:41</td>
+                                                                        <td>12m 4s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="54ddd7ed84893f726df8a90b6ddcd4da4a01154154ae9285a7c052eda5c78851.html">Logout</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="f88ec0b27d455566558d5f2f9d7afc164f2107316c4655316b5ac47598a42db5.html">Logout</a>
+                                                                                (1 example)
+                                                                        </td>
+                                                                        <td>8</td>
+                                                                        <td>20:05:45</td>
+                                                                        <td>2m 18s</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
 
                                                     </div>
                                                 </div>
@@ -404,7 +768,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [0,0,0,0,0,0,0,0],
+                data: [23,0,0,0,0,0,2,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -455,7 +819,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "92%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -500,7 +864,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,0,0],
+                    data: [23,0,0,0,0,0,2,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -583,7 +947,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','0','0','0','0','0','0'],
+                data: ['0','0','10','20','13','1','19','1'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -634,6 +998,142 @@
     </script>
     <!-- END DURATION CHART -->
 
+
+
+    <!-- COVERAGE BAR CHART -->
+    <script>
+
+        // The coverage bar chart
+        const coverageChartCtx = document.getElementById('coverageChart');
+
+        // Options define for display value on top of bars
+
+        const coverageReports = [
+            {
+                title: 'Button Beli',
+                result: 'ERROR',
+                link: "5e83a9696a22d60ca842fcad3c4f6843283c7558697e39b2021c762c9975068c.html"
+            },
+            {
+                title: 'Login',
+                result: 'SUCCESS',
+                link: "83f6679d20705c4d2fe60d958c7694f289478bda7a9f3a9ac9cbf7ba86966dfb.html"
+            },
+            {
+                title: 'Logout',
+                result: 'SUCCESS',
+                link: "54ddd7ed84893f726df8a90b6ddcd4da4a01154154ae9285a7c052eda5c78851.html"
+            },
+            {
+                title: 'Page Home',
+                result: 'ERROR',
+                link: "31376c3f728d8dee8e354956ace6e0c5447b15ec995a199156a6b2b6dfe291bb.html"
+            },
+            {
+                title: 'Register',
+                result: 'SUCCESS',
+                link: "3b8d02d7be757d6f8a663052671ec6811f370b5c9ff3d05923ed0e0f2d5ee035.html"
+            },
+        ]
+        const coverageData = {
+            labels: [
+                'Button Beli',
+                'Login',
+                'Logout',
+                'Page Home',
+                'Register',
+            ],
+            datasets: [
+                {
+                    label: ['Passing Tests'],
+                    data: [2,9,1,1,10],
+                    backgroundColor: [ 'rgba(153,204,51,0.5)' ]
+                },
+                {
+                    label: ['Pending Tests'],
+                    data: [null,null,null,null,null],
+                    backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
+                },
+                {
+                    label: ['Ignored Tests'],
+                    data: [null,null,null,null,null],
+                    backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
+                },
+                {
+                    label: ['Skipped Tests'],
+                    data: [null,null,null,null,null],
+                    backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
+                },
+                {
+                    label: ['Aborted Tests'],
+                    data: [null,null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+                },
+                {
+                    label: ['Failed Tests'],
+                    data: [null,null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
+                },
+                {
+                    label: ['Errors'],
+                    data: [1,null,null,1,null],
+                    backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
+                },
+                {
+                    label: ['Compromised Tests'],
+                    data: [null,null,null,null,null],
+                    backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
+                },
+            ]
+        }
+        const coverageOptions = {
+            responsive: true,
+            indexAxis: 'y',
+            // barPercentage: ,
+            barThickness: 'flex',
+            maxBarThickness: 30,
+            minBarLength: 2,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold'
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                },
+            },
+        }
+
+        const coverageChart = new Chart(coverageChartCtx, {
+            type: 'bar',
+            data: coverageData,
+            options: coverageOptions
+        });
+
+        function coverageClickHandler(click) {
+            const points = coverageChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                if (coverageReports[firstPoint.index].link) {
+                    window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
 
 </body>
 </html>

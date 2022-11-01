@@ -1,2 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Logout","Logout","SUCCESS","2022-10-28T23:01:10.4217041+07:00[Asia/Bangkok]","0.0","64.99"
+"Button Beli","see order","SUCCESS","2022-10-31T19:31:16.6197954+07:00[Asia/Bangkok]","0.0","70.91"
+"Button Beli","Bayar product","SUCCESS","2022-10-31T19:32:27.5430263+07:00[Asia/Bangkok]","0.0","76.18"
+"Page Home","I click button detail after login","ERROR","2022-10-31T19:33:43.7478029+07:00[Asia/Bangkok]","0.0","78.65"
+"Register","New Register","SUCCESS","2022-10-31T19:35:50.37627+07:00[Asia/Bangkok]","0.0","1071.11"

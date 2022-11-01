@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-10-2022 22:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-10-2022 19:15</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ So I can get product
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Beli one product
+                                <span class="error-color">Beli one product
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -220,23 +220,55 @@ So I can get product
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//button[@role='button']'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.DetailPage.canLogin(DetailPage.java:47)<br />starter.steps.DetailStep.iCanLogin(DetailStep.java:31)<br />✽.I can login "can login"(file:///D:/TIC/Kampus%20Merdeka/MSIB/Studi%20Independen/Alterra/MiniProject/MiniProjWeb/src/test/resources/features/login/Beli.feature:12)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource829645755900692794.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" 1: Beli one product ({email=maylananggi@gmail.com, pass=maylanqe22, result=can login})" width="1920"/>
-                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" Given I open the website" width="1920"/>
-                <img src="8ba34522f61dfafebaa1f17bfe4d7ba0e1b5f7f593f7b6b210aab87b397990e4.png" title=" When I click sign in button" width="1920"/>
-                <img src="72bf6449de1729acab261e9c009c4e89b4ec06722d9d2ee3e21a49c5b96a530d.png" title=" When I click sign in button (completed)" width="1920"/>
-                <img src="72bf6449de1729acab261e9c009c4e89b4ec06722d9d2ee3e21a49c5b96a530d.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid" width="1920"/>
-                <img src="2b67751d8ed0f9832d45d27ad5fd3d86db465c7ae31c4a7a2d2c2ce37af58fec.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid (completed)" width="1920"/>
-                <img src="2b67751d8ed0f9832d45d27ad5fd3d86db465c7ae31c4a7a2d2c2ce37af58fec.png" title=" And click login button" width="1920"/>
-                <img src="b0ec54a31908899706fcec32880a80f26100a62d8b083ad4128e4402fe3713cc.png" title=" And click login button (completed)" width="1920"/>
-                <img src="b0ec54a31908899706fcec32880a80f26100a62d8b083ad4128e4402fe3713cc.png" title=" And I can login &quot;can login&quot;" width="1920"/>
-                <img src="8f550f326561f7d007d7d15207f39c4d9391fc59cf9b0f3685e9b38be85495a2.png" title=" And I can login &quot;can login&quot; (completed)" width="1920"/>
-                <img src="8f550f326561f7d007d7d15207f39c4d9391fc59cf9b0f3685e9b38be85495a2.png" title=" And I click beli button product 1" width="1920"/>
-                <img src="c0ed7fc198ae36e12f56c2ec1ed1f3884e9fd51e40d6fbf5d0a0fbcaea78e9a6.png" title=" And I click beli button product 1 (completed)" width="1920"/>
-                <img src="c0ed7fc198ae36e12f56c2ec1ed1f3884e9fd51e40d6fbf5d0a0fbcaea78e9a6.png" title=" Then product increases" width="1920"/>
-                <img src="4b192daf37ce663b62b12b679505c215839d41d071a1c98d71331786f00287e1.png" title=" Then product increases (completed)" width="1920"/>
-                <img src="4b192daf37ce663b62b12b679505c215839d41d071a1c98d71331786f00287e1.png" title=" 1: Beli one product ({email=maylananggi@gmail.com, pass=maylanqe22, result=can login}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="85c1f30a4c62666a24040a1d2051d824563798830b08054a345902c7784171fd.png" title=" 1: Beli one product ({email=maylananggi@gmail.com, pass=maylanqe22, result=can login})" width="1554"/>
+                <img src="85c1f30a4c62666a24040a1d2051d824563798830b08054a345902c7784171fd.png" title=" Given I open the website" width="1554"/>
+                <img src="85c1f30a4c62666a24040a1d2051d824563798830b08054a345902c7784171fd.png" title=" When I click sign in button" width="1554"/>
+                <img src="63b199fcc25c4e836737fc37ecdc40e8ca7434f24a51f7ed9e749dc40979fb56.png" title=" When I click sign in button (completed)" width="1554"/>
+                <img src="63b199fcc25c4e836737fc37ecdc40e8ca7434f24a51f7ed9e749dc40979fb56.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid" width="1554"/>
+                <img src="01a611ddd16c5d4518ee6519656e82e4e44f750b21da0e6de4621b6a4cc7d270.png" title=" And I input &quot;maylananggi@gmail.com&quot; email and &quot;maylanqe22&quot; password valid (completed)" width="1554"/>
+                <img src="01a611ddd16c5d4518ee6519656e82e4e44f750b21da0e6de4621b6a4cc7d270.png" title=" And click login button" width="1554"/>
+                <img src="82be4afdd39636ac23848deac334fdc1f4b7ce153ac7fa00283a7460b22b128c.png" title=" And click login button (completed)" width="1554"/>
+                <img src="82be4afdd39636ac23848deac334fdc1f4b7ce153ac7fa00283a7460b22b128c.png" title=" And I can login &quot;can login&quot;" width="1554"/>
+                <img src="980c9d686982b16ff6ed0406f4811d73f3eb8bda59830e72c4433b724930ea97.png" title=" Can login" width="1554"/>
+                <img src="980c9d686982b16ff6ed0406f4811d73f3eb8bda59830e72c4433b724930ea97.png" title=" Can login (completed): <span class='error-color'>ERROR</span>" width="1554"/>
             </div>
         </div>
 
