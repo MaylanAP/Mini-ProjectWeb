@@ -23,6 +23,5 @@ Feature: Register
     | maylan    |                 | akunmay1  | cant regis  |
     | maylan    |                 |           | cant regis  |
     | maylan    | may1@gmail.com  |           | cant regis  |
-    | maylan    |                 |           | cant regis  |
     |           | may1@gmail.com  |           | cant regis  |
 

@@ -6,11 +6,11 @@ Feature: Button Beli
 
   Scenario Outline: Beli one product
     Given I open the website
-    When I click sign in button
+    And I click sign in button
     And I input "<email>" email and "<pass>" password valid
     And click login button
     And I can login "<result>"
-    And I click beli button product 1
+    When I click beli button product 1
     Then product increases
     Examples:
       | email | pass  | result  |
@@ -23,7 +23,9 @@ Feature: Button Beli
     And click login button
     And I can login "<result>"
     When I click beli button product 1
+    And product increases
     And I click beli button product 2
+    And product increases
     And I click cart icon
     Then see all order
     Examples:
@@ -40,8 +42,8 @@ Feature: Button Beli
     And I click beli button product 2
     And I click cart icon
     And see all order
-    Then click bayar button
-    And see transaction
+    And click bayar button
+    Then see transaction
     Examples:
       | email | pass  | result  |
       |maylananggi@gmail.com  | maylanqe22  | can login |

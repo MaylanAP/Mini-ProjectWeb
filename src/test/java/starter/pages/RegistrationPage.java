@@ -37,9 +37,6 @@ public class RegistrationPage extends PageObject {
     public void clckRegis(){
         $(fieldRegisUrl()).click();
     }
-    public void urlRegis(){
-        openAt("/");
-    }
     public void inputFullName(String fullname){
         $(fieldFullName()).type(fullname);
     }

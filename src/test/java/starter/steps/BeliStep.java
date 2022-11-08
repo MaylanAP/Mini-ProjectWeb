@@ -3,6 +3,7 @@ package starter.steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en_scouse.An;
 import net.thucydides.core.annotations.Steps;
 import starter.pages.BeliPage;
 
@@ -13,7 +14,7 @@ public class BeliStep {
     @When("I click beli button product 1")
     public void iClickBeliButtonProduct1() {
         beliPage.buttonBeli1();
-//        beliPage.scrollDown();
+        beliPage.scrollDown();
     }
 
     @Then("product increases")
@@ -37,12 +38,12 @@ public class BeliStep {
         beliPage.seeAllOrder();
     }
 
-    @Then("click bayar button")
+    @And("click bayar button")
     public void clickBayarButton() {
         beliPage.clckBayarButton();
     }
 
-    @And("see transaction")
+    @Then("see transaction")
     public void seeTransaction() {
         beliPage.canSeeTransaction();
     }

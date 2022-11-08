@@ -7,10 +7,10 @@ import org.openqa.selenium.Keys;
 public class BeliPage extends PageObject {
 
     private By fieldProd1(){
-        return By.xpath("//*[@id=\"15\"]/div/div[3]/div[2]/button[2]/span");
+        return By.xpath("//*[@id='70']/div/div[3]/div[2]/button[2]/span");
     }
     private By fieldProd2(){
-        return By.xpath("//*[@id=\"43\"]/div/div[3]/div[2]/button[2]/span");
+        return By.xpath("//*[@id='80']/div/div[3]/div[2]/button[2]/span");
     }
     private By fieldJumProd(){
         return By.xpath("//span[@class='v-badge__badge primary']");
@@ -52,7 +52,7 @@ public class BeliPage extends PageObject {
         $(fieldSeeTransac()).isDisplayed();
     }
     public void scrollDown(){
-        $("//body").sendKeys(Keys.END);
+        $("//body").sendKeys(Keys.DOWN);
     }
 
 }
