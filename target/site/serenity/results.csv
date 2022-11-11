@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Page Home","I click button detail after login","SUCCESS","2022-11-09T14:33:10.6945473+07:00[Asia/Bangkok]","0.0","24.2"
+"Page Home","give 4 star after login","SUCCESS","2022-11-09T14:33:35.9154912+07:00[Asia/Bangkok]","0.0","0.62"
+"Page Home","give 4 star before login","SUCCESS","2022-11-09T14:33:36.6590199+07:00[Asia/Bangkok]","0.0","0.14"

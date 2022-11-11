@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Page Home" skipped="0" tests="3" time="24.95" timestamp="2022-11-09 02:33:10"><testcase name="I click button detail after login"/><testcase name="give 4 star after login"/><testcase name="give 4 star before login"/></testsuite>

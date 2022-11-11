@@ -12,13 +12,13 @@ public class LoginStep {
     LoginPage logPage;
 
     @When("I input {string} email")
-    public void iInputEmail(String arg0) {
-        logPage.inputEmail(arg0);
+    public void iInputEmail(String email) {
+        logPage.inputEmail(email);
     }
 
     @And("I input {string} password")
-    public void iInputPassword(String arg0) {
-        logPage.inputPass(arg0);
+    public void iInputPassword(String pass) {
+        logPage.inputPass(pass);
     }
 
     @And("I click login button")
@@ -34,5 +34,4 @@ public class LoginStep {
             logPage.errorMessageLog();
         }
     }
-
 }
